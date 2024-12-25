@@ -1,46 +1,54 @@
 body {
-  background-color: #2e2e2e; /* Gris oscuro */
-  color: #f0f0f0;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #2e2e2e;
+    color: #f0f0f0;
 }
 
-.container {
-  display: flex;
+.left-panel {
+    width: 300px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-.sidebar {
-  width: 300px; /* Ancho fijo para la barra lateral */
-  background-color: #1a1a1a; /* Fondo más oscuro para la barra lateral */
-  padding: 20px;
-  position: fixed; /* Fija la barra lateral */
-  height: 100vh; /* Altura completa de la ventana */
-  overflow-y: auto; /* Permite el desplazamiento vertical */
+.right-panel {
+    flex-grow: 1;
+    margin-left: 300px;
+    padding: 40px;
+    overflow-y: auto;
 }
 
-.sidebar h1 {
-  text-align: center;
+h1, h2 {
+    color: #ffffff;
 }
 
-.profile-photo {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: 20px auto; /* Centra la foto */
+a {
+    color: #4a90e2;
+    text-decoration: none;
 }
 
-.social-links {
-  text-align: center;
+a:hover {
+    text-decoration: underline;
 }
 
-.social-links a {
-  color: #f0f0f0;
-  margin: 0 10px;
-  text-decoration: none;
+ul {
+    padding-left: 20px;
 }
 
-.main-content {
-  margin-left: 320px; /* Deja espacio para la barra lateral */
-  padding: 20px;
+.left-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.left-panel li {
+    margin-bottom: 10px;
+}
+
+.right-panel ul li {
+    margin-bottom: 15px;
 }
