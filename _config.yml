@@ -1,6 +1,6 @@
 title: Tu Nombre - Página Personal
 description: Descripción de tu sitio web
-url: "https://<tu-nombre-de-usuario>.github.io"
+url: "https://soriaruiz.com"
 theme: minima
 plugins:
   - jekyll-feed
