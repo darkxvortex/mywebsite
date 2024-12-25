@@ -1,34 +1,46 @@
 body {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  header img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .social-links {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .social-links a {
-    color: #f0f0f0;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
+  background-color: #2e2e2e; /* Gris oscuro */
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px; /* Ancho fijo para la barra lateral */
+  background-color: #1a1a1a; /* Fondo más oscuro para la barra lateral */
+  padding: 20px;
+  position: fixed; /* Fija la barra lateral */
+  height: 100vh; /* Altura completa de la ventana */
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+}
+
+.sidebar h1 {
+  text-align: center;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 20px auto; /* Centra la foto */
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links a {
+  color: #f0f0f0;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.main-content {
+  margin-left: 320px; /* Deja espacio para la barra lateral */
+  padding: 20px;
+}
